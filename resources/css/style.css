@@ -33,11 +33,6 @@ h4 {
   line-height: 1.4;
 }
 
-img, video {
-  width: 100%;
-  height: auto;
-}
-
 /* Header */
 header nav ul {
   height: 4rem;
@@ -117,6 +112,12 @@ section {
   padding: 2rem 0 2rem 1.5rem;
 }
 
+section img, 
+section video {
+  width: 100%;
+  height: auto;
+}
+
 .container {
   display: flex;
   gap: 1.5rem;
@@ -130,6 +131,22 @@ section {
 
 .content { 
   width: 40%; 
+}
+
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 2rem 1rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .media,
+  .content {
+    width: auto;
+  }
 }
 
 .item {
@@ -154,23 +171,39 @@ section {
   margin: 0.5rem 0;
 }
 
+.item .mobile {
+  display: none;
+}
+
 .focused {
   background-color: lightgray;
 }
 
 @media only screen and (max-width: 768px) {
-  section {
-    padding: 2rem 1.5rem;
+  .item {
+    display: block;
+    padding: 0;
   }
 
-  .container {
-    flex-direction: column;
-    gap: 0;
+  .item .image-box, 
+  .item .description {
+    width: 100%;
   }
 
-  .media,
-  .content {
-    width: auto;
+  .item .description {
+    padding: 1rem 2.5rem 0 1rem;
+  }
+
+  .item .mobile {
+    display: inline;
+  }
+
+  .item .desktop {
+    display: none;
+  }
+
+  .focused {
+    background-color: transparent;
   }
 }
 
@@ -200,9 +233,7 @@ section {
 
 @media only screen and (max-width: 768px) {
   #enrollment {
-    padding-left: 0;
-    padding-right: 0;
-    padding-top: 0;
+    padding: 0 0 2rem 0;
   }
 
   #enrollment .content .description {
@@ -260,6 +291,33 @@ section {
 #information .content li a {
   text-decoration: none;
   color: dodgerblue;
+  font-size: 0.9rem;
+}
+
+@media only screen and (max-width: 768px) {
+  #information {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  #information .media {
+    display: none;
+  }
+
+  #information .content {
+    padding: 0;
+    border-left: none;
+  }
+
+  #information .content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #information .content li {
+    border-bottom: none;
+  }
 }
 
 /* Courses section */
