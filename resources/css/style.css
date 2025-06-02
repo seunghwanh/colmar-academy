@@ -82,3 +82,29 @@ header .mobile {
     margin-right: 0;
   }
 }
+
+/* Main Globals */
+section {
+  padding: 2rem 0 2rem 1.5rem;
+}
+
+.container {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.media {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.media img,
+.media video {
+  width: 100%;
+  height: auto;
+}
+
+.content {
+  width: 40%;
+}
