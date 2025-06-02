@@ -128,6 +128,22 @@ section {
   flex-direction: column;
 }
 
+@media only screen and (max-width: 768px) {
+  section {
+    padding: 2rem 1.5rem;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .media,
+  .content {
+    width: auto;
+  }
+}
+
 /* Enrollment */
 #enrollment {
   background-color: #dadada;
@@ -147,4 +163,27 @@ section {
   color: white;
   background-color: #3f3f3f;
   text-align: center;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 768px) {
+  #enrollment {
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }
+
+  #enrollment .content {
+    margin: 2rem 1.5rem 0 1.5rem;
+    max-width: none;
+  }
+
+  #enrollment .content h2,
+  #enrollment .content h4 {
+    max-width: 350px;
+  }
+
+  .button {
+    background-color: #8d8d8d;
+  }
 }
