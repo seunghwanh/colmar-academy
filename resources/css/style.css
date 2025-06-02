@@ -323,12 +323,7 @@ section video {
 /* Courses section */
 #courses {
   background-color: lightgray;
-  padding: 2rem 3.5rem;
-}
-
-#courses h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+  padding: 2rem 3.5rem 1rem 3.5rem;
 }
 
 #courses ul {
@@ -336,6 +331,11 @@ section video {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
+}
+
+#courses h2 {
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 .course {
@@ -368,7 +368,7 @@ section video {
   }
 
   #courses h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
   }
 
   #courses ul {
@@ -394,4 +394,18 @@ section video {
   .course p {
     display: none;
   }
+}
+
+/* Thesis */
+#thesis h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#thesis .media h3 {
+  margin-top: 1.5rem;
+}
+
+#thesis .media p {
+  margin-top: 0.5rem;
 }
