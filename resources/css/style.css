@@ -175,6 +175,10 @@ section video {
   display: none;
 }
 
+.item .desktop {
+  display: block;
+}
+
 .focused {
   background-color: lightgray;
 }
@@ -195,7 +199,7 @@ section video {
   }
 
   .item .mobile {
-    display: inline;
+    display: block;
   }
 
   .item .desktop {
@@ -237,7 +241,7 @@ section video {
   }
 
   #enrollment .content .description {
-    margin: 2rem 1.5rem 0 1.5rem;
+    margin: 2rem 1rem 0 1rem;
     max-width: none;
   }
 
@@ -414,6 +418,7 @@ section video {
   #thesis {
     padding-left: 0;
     padding-right: 0;
+    padding-bottom: 1.5rem;
   }
 
   #thesis .content,
