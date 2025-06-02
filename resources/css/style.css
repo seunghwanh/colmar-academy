@@ -18,6 +18,12 @@ h2, h3, h4 {
   color: #3f3f3f;
 }
 
+p {
+  color: #6e6e6e;
+  line-height: 1.4;
+  font-size: 0.9rem;
+}
+
 h2 { font-size: 2.2rem; }
 
 h4 { 
@@ -122,11 +128,7 @@ section {
   height: auto;
 }
 
-.content {
-  width: 40%;
-  display: flex;
-  flex-direction: column;
-}
+.content { width: 40%; }
 
 @media only screen and (max-width: 768px) {
   section {
@@ -146,13 +148,15 @@ section {
 
 /* Enrollment */
 #enrollment {
-  background-color: #dadada;
+  background-color: lightgray;
 }
 
-#enrollment .content {
-  max-width: 320px;
-  margin-right: 1rem;
+#enrollment .content .description {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
+  max-width: 350px;
+  height: 100%;
 }
 
 #enrollment h2 { margin-bottom: 2rem; }
@@ -173,7 +177,7 @@ section {
     padding-top: 0;
   }
 
-  #enrollment .content {
+  #enrollment .content .description {
     margin: 2rem 1.5rem 0 1.5rem;
     max-width: none;
   }
@@ -186,4 +190,38 @@ section {
   .button {
     background-color: #8d8d8d;
   }
+}
+
+/* Information section */
+#information {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#information .media { 
+  padding-top: 2rem; 
+  padding-bottom: 2rem;
+}
+
+#information .media .description {
+  width: 90%;
+}
+
+#information .media img { margin-bottom: 2rem; }
+#information .media h2 { margin-bottom: 1.5rem; }
+
+#information .media .attribution { 
+  margin-top: 3.5rem; 
+  color: #222;
+}
+
+#information .content { 
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  border-left: 1px solid lightgray;
+}
+
+/* Courses section */
+#courses {
+  background-color: lightgray;
 }
