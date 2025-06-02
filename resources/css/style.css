@@ -14,6 +14,17 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
+h2, h3, h4 {
+  color: #3f3f3f;
+}
+
+h2 { font-size: 2.2rem; }
+
+h4 { 
+  font-size: 1.25rem; 
+  line-height: 1.4;
+}
+
 /* Header */
 header nav ul {
   margin: 0;
@@ -113,9 +124,27 @@ section {
 
 .content {
   width: 40%;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Enrollment */
 #enrollment {
-  background-color: #e0e0e0;
+  background-color: #dadada;
+}
+
+#enrollment .content {
+  max-width: 320px;
+  margin-right: 1rem;
+  justify-content: center;
+}
+
+#enrollment h2 { margin-bottom: 2rem; }
+#enrollment h4 { margin-bottom: 1.5rem; }
+
+.button {
+  padding: 0.5rem 0;
+  color: white;
+  background-color: #3f3f3f;
+  text-align: center;
 }
