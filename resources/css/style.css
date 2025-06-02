@@ -9,7 +9,7 @@ body {
   font-family: Arial, sans-serif;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h1, h2, h3, h4, h5, h6, p, ul {
   margin: 0;
   padding: 0;
 }
@@ -24,16 +24,22 @@ p {
   font-size: 0.9rem;
 }
 
-h2 { font-size: 2.2rem; }
+h2 { 
+  font-size: 2.2rem; 
+}
 
 h4 { 
   font-size: 1.25rem; 
   line-height: 1.4;
 }
 
+img, video {
+  width: 100%;
+  height: auto;
+}
+
 /* Header */
 header nav ul {
-  margin: 0;
   height: 4rem;
   padding: 0 1.5rem;
   list-style: none;
@@ -122,13 +128,35 @@ section {
   width: 60%;
 }
 
-.media img,
-.media video {
-  width: 100%;
-  height: auto;
+.content { 
+  width: 40%; 
 }
 
-.content { width: 40%; }
+.item {
+  display: flex;
+  padding: 1rem 0 1rem 1rem;
+}
+
+.item .image-box { 
+  width: 35%;
+}
+
+.item .description {
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 1rem;
+  padding-right: 1.5rem;
+}
+
+.item .description p {
+  margin: 0.5rem 0;
+}
+
+.focused {
+  background-color: lightgray;
+}
 
 @media only screen and (max-width: 768px) {
   section {
@@ -207,7 +235,7 @@ section {
   width: 90%;
 }
 
-#information .media img { margin-bottom: 2rem; }
+#information .media img { margin-bottom: 1.5rem; }
 #information .media h2 { margin-bottom: 1.5rem; }
 
 #information .media .attribution { 
@@ -219,6 +247,19 @@ section {
   padding-top: 1rem;
   padding-bottom: 2rem;
   border-left: 1px solid lightgray;
+}
+
+#information .content ul {
+  list-style: none;
+}
+
+#information .content li {
+  border-bottom: 1px solid lightgray;
+}
+
+#information .content li a {
+  text-decoration: none;
+  color: dodgerblue;
 }
 
 /* Courses section */
