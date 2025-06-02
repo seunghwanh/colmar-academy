@@ -67,14 +67,14 @@ header .mobile {
   }
 
   header .mobile {
-    display: block;
+    display: inline;
   }
 
   header .desktop {
     display: none;
   }
 
-  header nav li span {
+  .nav-label {
     display: none;
   }
 
