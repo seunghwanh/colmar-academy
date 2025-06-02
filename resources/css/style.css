@@ -358,3 +358,40 @@ section video {
 .course .description p {
   margin: 0.5rem 0;
 }
+
+@media only screen and (max-width: 768px) {
+  #courses {
+    padding: 2rem 1rem;
+    background-color: transparent;
+    border-top: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+
+  #courses h2 {
+    margin-bottom: 1rem;
+  }
+
+  #courses ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .course {
+    width: 100%;
+    padding: 0;
+  }
+
+  .course .description {
+    background-color: lightgray;
+    padding: 1.5rem 1rem;
+  }
+
+  .course .description h3 {
+    margin: 0;
+  }
+
+  .course img,
+  .course p {
+    display: none;
+  }
+}
