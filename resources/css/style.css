@@ -59,3 +59,26 @@ header .logo .company-name {
 header .mobile {
   display: none;
 }
+
+@media only screen and (max-width: 768px) {
+  header nav ul {
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  header .mobile {
+    display: block;
+  }
+
+  header .desktop {
+    display: none;
+  }
+
+  header nav li span {
+    display: none;
+  }
+
+  header .logo {
+    margin-right: 0;
+  }
+}
