@@ -14,9 +14,6 @@ h1, h2, h3, h4, h5, h6, p {
   padding: 0;
 }
 
-.dark-gray { color: #333; }
-.light-gray { color: #777; }
-
 /* Header */
 header nav ul {
   margin: 0;
@@ -56,6 +53,14 @@ header .logo .company-name {
   color: #222;
 }
 
+header .logo span {
+  color: #8d8d8d;
+}
+
+header .nav-label {
+  color: #333;
+}
+
 header .mobile {
   display: none;
 }
@@ -74,7 +79,8 @@ header .mobile {
     display: none;
   }
 
-  .nav-label {
+  .nav-label,
+  .logo span {
     display: none;
   }
 
@@ -107,4 +113,9 @@ section {
 
 .content {
   width: 40%;
+}
+
+/* Enrollment */
+#enrollment {
+  background-color: #e0e0e0;
 }
